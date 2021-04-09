@@ -3,28 +3,78 @@ html {
     background-size: cover;
   }
 
-#Xcm2309 {
-    margin: auto;
-    width: 50%;
+.title-card {
     color: #0c0b80;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     font-size: 120px;
     letter-spacing: 10px;
+    margin: 10;
 }
 
-img {
-    display: block;
+.img_frame {
+    display: inline-block;
+    background-color: yellow;
+}
+
+.img_source {
+    width: 512px;
+    padding: 5px;
+    border-style: solid;
+    border-color: #000000;
+    border-width: 2px;
     margin-left: auto;
     margin-right: auto;
-    width: 512px;
-    color: #0c0b80;
+}
+
+.img_caption {
+    font-style: italic;
+    text-align: center;
+}
+
+.nav-bar {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.nav-bar-item {
+    display: inline-block;
+    width: 128px;
+    color: #410b6d;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 5px;
+    text-align: center;
+}
+
+.nav-bar-item:hover {
+    background-color: #410b6d;
+    color: white;
+}
+
+.content {
+    display: inline-block;
+}
+
+.content-container {
+    display: flex;
+    justify-content: center;
 }
 
 @media (prefers-color-scheme: light) {
     html {
          background: url(images/background_light.png) no-repeat center center fixed; 
+    }
+
+    .title-card {
+        color: #0c0b80;
+    }
+
+    .img-source {
+        border-color: #000000;
     }
   
 }
@@ -32,5 +82,26 @@ img {
 @media (prefers-color-scheme: dark) {
     html {
       background: url(images/background_dark.png) no-repeat center center fixed;
+    }
+
+    .title-card {
+        color: #410b6d;
+    }
+
+    .img_source {
+        border-color: #ffffff;
+    }
+
+    .nav-bar-item {
+        color: #0c0b80;
+    }
+
+    .nav-bar-item:hover {
+        color: #ffffff;
+        background-color: #0c0b80;;
+    }
+
+    .img_caption {
+        color: #ffffff;
     }
 }
